@@ -1,1 +1,51 @@
-extends layout
+extends ../node_modules/jade-bootstrap/_bootstrap
+//extends ../node_modules/jade-bootstrap/layouts/carousel
+append styles
+    // Custom styles for this template
+    link(href='../css/navbar.css', rel='stylesheet')
+block body
+    .banner
+        img(src='https://raw.githubusercontent.com/ssaidou/mywebsite/master/public/AlbertEinstein.jpg', class='img-responsive center-block')
+    .container
+        // Static navbar
+        nav.navbar.navbar-default
+                .navbar-header
+                    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='/') Albert Einstein
+                #navbar.navbar-collapse.collapse
+                    ul.nav.navbar-nav
+                        li.active
+                            a(href='#') Home
+                        li
+                            a(href='#') About
+
+        // Main component for a primary marketing message or call to action
+        .jumbotron
+            h1 La vie est comme une bicyclette. Pour garder l’équilibre, il faut avancer
+            p
+                | Si vous ne pouvez expliquer un concept à un enfant de six ans, c’est que vous ne le comprenez pas complètement.
+                | Si une idée ne paraît pas d’abord absurde, alors il n’y a aucun espoir qu’elle devienne quelque chose.
+            p
+                | Si vous ne pouvez expliquer un concept à un enfant de six ans, c’est que vous ne le comprenez pas complètement.
+                | Si une idée ne paraît pas d’abord absurde, alors il n’y a aucun espoir qu’elle devienne quelque chose.
+                | Si une idée ne paraît pas d’abord absurde, alors il n’y a aucun espoir qu’elle devienne quelque chose.
+            p
+                | Si vous ne pouvez expliquer un concept à un enfant de six ans, c’est que vous ne le comprenez pas complètement.
+                | Si une idée ne paraît pas d’abord absurde, alors il n’y a aucun espoir qu’elle devienne quelque chose.            p
+                | Si vous ne pouvez expliquer un concept à un enfant de six ans, c’est que vous ne le comprenez pas complètement.
+                | Si une idée ne paraît pas d’abord absurde, alors il n’y a aucun espoir qu’elle devienne quelque chose.            p
+                | Si vous ne pouvez expliquer un concept à un enfant de six ans, c’est que vous ne le comprenez pas complètement.
+                | Si une idée ne paraît pas d’abord absurde, alors il n’y a aucun espoir qu’elle devienne quelque chose.
+
+        footer
+            p.pull-right
+                a(href='#') Back to top
+            p
+                | © 2016 Company, Inc. ·
+                a(href='#') Privacy
+                |  ·
+                a(href='#') Terms
